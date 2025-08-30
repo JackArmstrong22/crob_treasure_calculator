@@ -1,7 +1,7 @@
 import csv
 from treasure_class import Treasure
 
-# read all treasure data
+
 def get_treasure_data():
     treasure_dict = {}
     with open('treasure_data.csv') as file:
