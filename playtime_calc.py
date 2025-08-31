@@ -25,11 +25,11 @@ def playtime_calc(level, time_in_sec):
                              point_total)
         )
 
-        sorted_results = sorted(
-            result_dict.items(),
-            key=lambda item: item[1]["point_total"],
-            reverse=True
-        )
+    sorted_results = sorted(
+        result_dict.items(),
+        key=lambda item: item[1]["point_total"],
+        reverse=True
+    )
 
     return sorted_results
 
