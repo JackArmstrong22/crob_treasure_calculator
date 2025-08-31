@@ -1,8 +1,9 @@
-from extract_treasure_csv import get_treasure_data
-
+from playtime_calc import playtime_calc
 
 if __name__ == "__main__":
-    treasure_dict = get_treasure_data()
-
-    for name, treasure in treasure_dict.items():
-        print(name, treasure.__dict__)
+    result = playtime_calc(1, 24)
+    print(result)
+    for name, data in result:
+        treasure_obj = data["treasure"]
+        print(treasure_obj.name, treasure_obj.cooldown,
+              treasure_obj.point_per_jelly)
