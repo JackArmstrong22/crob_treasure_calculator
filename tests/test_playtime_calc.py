@@ -11,3 +11,7 @@ class TestPlaytime(unittest.TestCase):
     def test2(self):
         typewriter = 2026080
         self.assertEqual(playtime_calc(LEVEL_ONE, 24), typewriter)
+
+    def test3(self):
+        typewriter = 0
+        self.assertEqual(playtime_calc(LEVEL_ONE, 22), typewriter)
