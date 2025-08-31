@@ -1,2 +1,3 @@
 def playtime_calc(time_in_sec):
-    pass
+    if time_in_sec == 0:
+        return "Invalid time!"
