@@ -13,8 +13,10 @@ def playtime_calc(level, time_in_sec):
         if time_in_sec % treasure.cooldown < treasure.activation_time:
             activation_count -= 1
 
-        point_total = (treasure.point_per_jelly +
+        point_value = (treasure.point_per_jelly +
                        (treasure.point_per_level * level)
                        ) * treasure.jelly_num
+
+        point_total = point_value * activation_count
 
     return point_total
