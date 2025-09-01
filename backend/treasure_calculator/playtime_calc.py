@@ -1,4 +1,4 @@
-from extract_treasure_csv import get_treasure_data
+from .extract_treasure_csv import get_treasure_data
 
 
 def playtime_calc(level, time_in_sec):
@@ -11,6 +11,7 @@ def playtime_calc(level, time_in_sec):
 
     for treasure in treasure_data.values():
         activation_count = int(time_in_sec // treasure.cooldown)
+        # not enough time to collect it
         if time_in_sec % treasure.cooldown < treasure.activation_time:
             activation_count -= 1
 
@@ -31,13 +32,13 @@ def playtime_calc(level, time_in_sec):
         reverse=True
     )
 
-    return sorted_results
+    return list(sorted_results)
 
 
 def package_treasure(treasure, activation_count, point_value, point_total):
     my_dict = {}
     my_dict[treasure.name] = {
-            "treasure": treasure,
+            "treasure": treasure.name,
             "activation_count": activation_count,
             "point_value": point_value,
             "point_total": point_total

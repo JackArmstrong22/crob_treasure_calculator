@@ -1,10 +1,13 @@
 import csv
-from treasure_class import Treasure
+from .treasure_class import Treasure
+from pathlib import Path
+
+file_path = Path(__file__).parent / "treasure_data.csv"
 
 
 def get_treasure_data():
     treasure_dict = {}
-    with open('treasure_data.csv') as file:
+    with file_path.open() as file:
         csvFile = csv.DictReader(file)
         for row in csvFile:
             treasure = Treasure(
