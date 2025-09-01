@@ -21,7 +21,7 @@ def playtime_calc(level, time_in_sec):
         point_total = point_value * activation_count
 
         result_dict.update(
-            package_treasure(treasure, activation_count, point_value, 
+            package_treasure(treasure, activation_count, point_value,
                              point_total)
         )
 
