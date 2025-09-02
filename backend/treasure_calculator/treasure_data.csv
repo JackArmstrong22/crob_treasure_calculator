@@ -1,2 +1,5 @@
-name,point_per_jelly,point_per_level,jelly_num,cooldown,activation_time,enhancement_points,enhancement_points_per_level
-Automatic Typerwriter, 225120, 18480, 9, 18.9, 4.65, 12600, 12600
+name,point_per_jelly,point_per_level,jelly_num,cooldown,activation_time,enhancement_points
+Automatic Typewriter, 225120, 18480, 9, 18.9, 4.8, 75600
+Waffle Headset, 241200, 19800, 6, 13.5, 5.51, 81000
+Precise Rambutan Bow, 132250, 10850, 15, 18.5, 4.23, 44400
+Sniffly Cocoa Palm, 150080, 12320, 12, 16.8, 7.21, 50400

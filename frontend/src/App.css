@@ -1,42 +1,80 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Center the App content */
+.app-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 1rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Input groups */
+.input-group {
+  margin-bottom: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-group input {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Button */
+.calculate-button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #646cff;
+  color: #fff;
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
+.calculate-button:hover {
+  background-color: #535bf2;
 }
 
-.read-the-docs {
-  color: #888;
+/* Error text */
+.error {
+  color: #ff5555;
+  margin-top: 0.5rem;
+}
+
+/* Results container */
+.results-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* List of results */
+.results-list {
+  padding-left: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Individual result item */
+.result-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #333;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+/* Text next to image */
+.result-text {
+  margin-left: 0.5rem;
+  text-align: left;
+  color: #fff;
+}
+
+.result-number {
+  font-weight: bold;
+  margin-right: 0.5rem;
 }

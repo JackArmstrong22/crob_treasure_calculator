@@ -18,9 +18,6 @@ def get_treasure_data():
                 cooldown=float(row['cooldown']),
                 activation_time=float(row['activation_time']),
                 enhancement_points=int(row['enhancement_points']),
-                enhancement_points_per_level=int(
-                    row['enhancement_points_per_level']
-                )
             )
             treasure_dict[row['name']] = treasure
 

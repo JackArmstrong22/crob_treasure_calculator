@@ -5,7 +5,7 @@ class Treasure:
             point_per_jelly, point_per_level,
             jelly_num,
             cooldown, activation_time,
-            enhancement_points, enhancement_points_per_level
+            enhancement_points
             ):
         self.name = name
         self.point_per_jelly = point_per_jelly
@@ -14,4 +14,3 @@ class Treasure:
         self.cooldown = cooldown
         self.activation_time = activation_time
         self.enhancement_points = enhancement_points
-        self.enhancement_points_per_level = enhancement_points_per_level
